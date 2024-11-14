@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator egzaminów</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header><h1>Kalkulator dni do egzaminów</h1></header>
+        <main>
+            <label for="wydarzenie">Wydarzenie:
+                <select name="wydarzenie" id="wydarzenie">
+                    <option value="null">Wybierz z listy</option>
+                    <option value="2025-01-13">INF 03 pisemny</option>
+                    <option value="2025-01-14">INF 03 praktyczny</option>
+                    <option value="2025-05-05">Matura polski</option>
+                    <option value="2025-05-06">Matura matma</option>
+                    <option value="2025-05-07">Matura angielski</option>
+                </select>
+                
+            </label>
+            <label for="data"  id="calendarDis" class="hidden">
+                Wybierz datę: <input type="date" name="data" id="data">
+            </label>
+            <section> 
+                <button id="butNow">Dni od dziś</button>
+                <button id="butDate">Pokaż kalendarz</button>
+            </section>
+            <h2 id="display">
+
+            </h2>
+        </main>
+        <footer>&copy; ja2024</footer>
+    </div>
+</body>
+</html>
